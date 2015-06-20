@@ -1,0 +1,1730 @@
+#! <?xml version="1.0" encoding="utf-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    C:\Software\FME\fme.exe F:\Vancouver\481\Scripts\BuildingScoreAssignment.fmw
+#          --SourceDataset_ARCGIS_LAYER "F:\Vancouver\481\Vancouver\rmsi data\buildings\Vancouver_buildings.shp"
+#          --SourceDataset_ARCGIS_LAYER_3 "F:\Vancouver\481\Vancouver\Vancouver_Feb2010\City streets data package\public_streets.shp"
+#          --DestDataset_SHAPE "N:\Geog 481\Test"
+#    
+#    
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#! FME_DOCUMENT_PRIORGUID="482a06c0-517e-41db-9c26-85e9145c3c52"
+#! FME_SERVER_SERVICES=""
+#! DOC_TOP_LEFT="75.9998 -1839.02"
+#! BEGIN_TCL=""
+#! HISTORY=""
+#! LOG_MAX_PRECISION="Yes"
+#! DESTINATION_ROUTING_FILE=""
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! WORKSPACE_VERSION="1"
+#! SOURCE_ROUTING_FILE=""
+#! MULTI_WRITER_DATASET_ORDER="BY_ID"
+#! SHOW_ANNOTATIONS="true"
+#! FME_REPROJECTION_ENGINE="FME"
+#! END_PYTHON=""
+#! PASSWORD=""
+#! LAST_SAVE_BUILD="FME(R) 2015.0 (20150217 - Build 15253 - WIN32)"
+#! END_TCL=""
+#! CATEGORY=""
+#! DOC_EXTENTS="5213.98 1645.02"
+#! LEGAL_TERMS_CONDITIONS=""
+#! TITLE=""
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! IGNORE_READER_FAILURE="No"
+#! SHOW_INFO_NODES="true"
+#! REQUIREMENTS_KEYWORD=""
+#! REQUIREMENTS=""
+#! FME_BUILD_NUM="15253"
+#! MAX_LOG_FEATURES="200"
+#! REDIRECT_TERMINATORS="NONE"
+#! FME_DOCUMENT_GUID="2ecff4dc-68ce-4402-8f15-1be6f6c3c3bc"
+#! VIEW_POSITION="3707.18 -33.3337"
+#! SOURCE="NONE"
+#! LAST_SAVE_DATE="2015-06-11T15:52:20"
+#! DESTINATION="NONE"
+#! BEGIN_PYTHON=""
+#! LOG_FILE=""
+#! FME_STROKE_MAX_DEVIATION="0"
+#! ATTR_TYPE_ENCODING="SDF"
+#! USAGE=""
+#! DESCRIPTION=""
+#! ZOOM_SCALE="126"
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="ARCGIS_LAYER"
+#! DATASET="$(SourceDataset_ARCGIS_LAYER)"
+#! KEYWORD="ARCGIS_LAYER_1"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY}"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_feature_type char(50) fme_fill_color char(50) fme_text_string char(50) multi_reader_full_id integer fme_basename char(50) fme_text_size double fme_geometry fme_char(50) arcgis_layer char(255) multi_reader_id integer fme_color char(50) geodb_type char(25) fme_type char(50) fme_secondary_axis double fme_start_angle double fme_primary_axis double multi_reader_keyword char(50) fme_rotation double fme_dataset char(50) fme_sweep_angle double multi_reader_type char(50)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="ESRILAYER"
+#! GENERATE_FME_BUILD_NUM="15253"
+#! START_FEATURE=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! COORDSYS=""
+#! MIN_FEATURES=""
+#! MAX_FEATURES=""
+#! FEATURE_TYPES=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="DATASET_NAME"
+#! VALUE="Esri Layer file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Layer"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_DATASET_HINT"
+#! VALUE="Select a single Esri Layer file"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="ARCGIS_LAYER"
+#! DATASET="$(SourceDataset_ARCGIS_LAYER_3)"
+#! KEYWORD="ARCGIS_LAYER_2"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY}"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_feature_type char(50) fme_fill_color char(50) fme_text_string char(50) multi_reader_full_id integer fme_basename char(50) fme_text_size double fme_geometry fme_char(50) arcgis_layer char(255) multi_reader_id integer fme_color char(50) geodb_type char(25) fme_type char(50) fme_secondary_axis double fme_start_angle double fme_primary_axis double multi_reader_keyword char(50) fme_rotation double fme_dataset char(50) fme_sweep_angle double multi_reader_type char(50)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="ESRILAYER"
+#! GENERATE_FME_BUILD_NUM="15253"
+#! START_FEATURE=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! COORDSYS=""
+#! MIN_FEATURES=""
+#! MAX_FEATURES=""
+#! FEATURE_TYPES=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="DATASET_NAME"
+#! VALUE="Esri Layer file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Layer"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_DATASET_HINT"
+#! VALUE="Select a single Esri Layer file"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="SHAPE"
+#! DATASET="$(DestDataset_SHAPE)"
+#! KEYWORD="SHAPE_1"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="10"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY}"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_color char(50) fme_dataset char(50) fme_geometry fme_char(50) fme_rotation number(31,15) fme_text_string char(50) fme_type char(50) fme_start_angle number(31,15) fme_primary_axis number(31,15) fme_sweep_angle number(31,15) fme_secondary_axis number(31,15) fme_feature_type char(50) fme_fill_color char(50) shape_measures char(254) fme_basename char(50) fme_text_size number(31,15)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES="INDEX"
+#! ATTR_NAME_INVALID_CHARS=". -%[]&quot;!?*&apos;&amp;\/{}"
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="FILEDIR"
+#! GENERATE_FME_BUILD_NUM="15253"
+#! FANOUT_ID_ATTR=""
+#! FANOUT_SUFFIX=""
+#! COORDSYS=""
+#! FANOUT_PREFIX=""
+#! FANOUT_DIRECTORY=""
+#! FANOUT="No"
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="WRITER_DATASET_HINT"
+#! VALUE="Specify a folder for the Esri Shape file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="DATASET_NAME"
+#! VALUE="shp file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Shape File"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_DEFAULT_NAME"
+#! VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="SHAPE_IN_ENCODING SHAPE_OUT_STRICT_COMPATIBILITY SHAPE_OUT_PRESERVE_RING_VERTEX_ORDER"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_DATASET_HINT"
+#! VALUE="Select the Esri Shape file(s)"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(2048)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="blob"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="guid"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_date"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_time"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int32"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_int16"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="double"
+#! FME_TYPE="fme_real64"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="double"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_int64"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="boolean"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="double(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="subtype(stringset)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="subtype_codes(stringmap)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="range_domain(range_domain)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="coded_domain(coded_domain)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(254)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(12)"
+#! FME_TYPE="fme_time"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_date"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(31,15)"
+#! FME_TYPE="fme_real64"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(15,7)"
+#! FME_TYPE="fme_real32"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_int32"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(20,0)"
+#! FME_TYPE="fme_int64"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(20,0)"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_int16"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(4,0)"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="SHAPE"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="SHAPE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_point"
+#! FME_TYPE="fme_point"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_area"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_polyline"
+#! FME_TYPE="fme_line"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_multipoint"
+#! FME_TYPE="fme_point"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_table"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_table"
+#! FME_TYPE="fme_collection"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_polyline"
+#! FME_TYPE="fme_arc"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_annotation"
+#! FME_TYPE="fme_text"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_dimension"
+#! FME_TYPE="fme_point"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_simple_junction"
+#! FME_TYPE="fme_point"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_simple_edge"
+#! FME_TYPE="fme_line"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_complex_junction"
+#! FME_TYPE="fme_point"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_complex_edge"
+#! FME_TYPE="fme_line"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_attributed_relationship"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_relationship"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_metadata"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_multipatch"
+#! FME_TYPE="fme_surface"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_multipatch"
+#! FME_TYPE="fme_solid"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_raster"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="ARCGIS_LAYER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_pointz"
+#! FME_TYPE="fme_point"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_pointm"
+#! FME_TYPE="fme_point"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_point"
+#! FME_TYPE="fme_point"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_multipointz"
+#! FME_TYPE="fme_point"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_multipointm"
+#! FME_TYPE="fme_point"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_multipoint"
+#! FME_TYPE="fme_point"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polylinez"
+#! FME_TYPE="fme_line"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polylinem"
+#! FME_TYPE="fme_line"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polyline"
+#! FME_TYPE="fme_line"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polygonz"
+#! FME_TYPE="fme_area"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polygonm"
+#! FME_TYPE="fme_area"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polygon"
+#! FME_TYPE="fme_area"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_pointz"
+#! FME_TYPE="fme_text"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polygonz"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polylinez"
+#! FME_TYPE="fme_arc"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_multipatch"
+#! FME_TYPE="fme_surface"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_multipatch"
+#! FME_TYPE="fme_solid"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polygonz"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polygonz"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_null"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polygonz"
+#! FME_TYPE="fme_raster"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_polygonz"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="SHAPE"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="shape_null"
+#! FME_TYPE="fme_collection"
+#! FORMAT="SHAPE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="Vancouver_buildings"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="1"
+#! FEAT_GEOMTYPE="geodb_polygon"
+#! POSITION="75.9998 -462.004"
+#! BOUNDING_RECT="75.9998 -462.004 -1 -1"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="ARCGIS_LAYER_1"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="FID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LAYER" ATTR_TYPE="char(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="HEIGHT" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="public_streets"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="16"
+#! FEAT_GEOMTYPE="geodb_polyline"
+#! POSITION="1744.02 -1036.51"
+#! BOUNDING_RECT="1744.02 -1036.51 -1 -1"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="ARCGIS_LAYER_2"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="FID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="USE" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="HBLOCK" ATTR_TYPE="char(102)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="public_streets"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="37"
+#! FEAT_GEOMTYPE="shape_polylinez"
+#! POSITION="5168.34 -846.03"
+#! BOUNDING_RECT="5168.34 -846.03 -1 -1"
+#! ORDER="5e+014"
+#! COLLAPSED="false"
+#! KEYWORD="SHAPE_1"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! SCHEMA_ATTRIBUTE_SOURCE="1"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="FID" ATTR_TYPE="number(11,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="USE" ATTR_TYPE="char(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="HBLOCK" ATTR_TYPE="char(102)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="Time_" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="_predicate" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LAYER" ATTR_TYPE="char(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="HEIGHT" ATTR_TYPE="number(31,15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="Score" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="maxScore" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="minScore" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI ESRI_LAYER SourceDataset_ARCGIS_LAYER Source Esri ArcGIS Layer:"
+#! DEFAULT_VALUE="F:\Vancouver\481\Vancouver\rmsi data\buildings\Vancouver_buildings.shp"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI ESRI_LAYER SourceDataset_ARCGIS_LAYER_3 Source Esri ArcGIS Layer:"
+#! DEFAULT_VALUE="F:\Vancouver\481\Vancouver\Vancouver_Feb2010\City streets data package\public_streets.shp"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI DIRNAME DestDataset_SHAPE Destination Esri Shape Folder:"
+#! DEFAULT_VALUE="N:\Geog 481\Test"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#! IDENTIFIER="25"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Assign dummy time constant to streets. This is done because we have no current time score.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="2156.52 -1184.01"
+#! TOP_LEFT="2156.52 -1184.01"
+#! BOTTOM_RIGHT="2906.52 -1234.01"
+#! BOUNDING_RECT="2156.52 -1184.01 750 50"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="10"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="2"
+#! TYPE="TestFilter"
+#! VERSION="1"
+#! POSITION="662.506 -434.002"
+#! BOUNDING_RECT="662.506 -434.002 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="&lt;at&gt;Value&lt;openparen&gt;HEIGHT&lt;closeparen&gt;&lt;space&gt;&lt;lt&gt;&lt;space&gt;10"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="&lt;at&gt;Value&lt;openparen&gt;HEIGHT&lt;closeparen&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;10"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="BOOL_OP&lt;comma&gt;OR&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;HEIGHT&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;&lt;lt&gt;=&lt;space&gt;10&lt;quote&gt;,&lt;at&gt;Value&lt;openparen&gt;HEIGHT&lt;closeparen&gt;&lt;space&gt;&lt;lt&gt;&lt;space&gt;10,BOOL_OP&lt;comma&gt;AND&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;HEIGHT&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;10&lt;lf&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;HEIGHT&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;&lt;lt&gt;=&lt;space&gt;40&lt;quote&gt;,&lt;at&gt;Value&lt;openparen&gt;HEIGHT&lt;closeparen&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;10"/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="4"
+#! TYPE="AttributeCreator"
+#! VERSION="6"
+#! POSITION="1466.01 -194.002"
+#! BOUNDING_RECT="1466.01 -194.002 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="Score,1"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="5"
+#! TYPE="AttributeCreator"
+#! VERSION="6"
+#! POSITION="1466.01 -504.005"
+#! BOUNDING_RECT="1466.01 -504.005 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="Score,1.15"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="6"
+#! TYPE="AttributeCreator"
+#! VERSION="6"
+#! POSITION="1466.01 -791.007"
+#! BOUNDING_RECT="1466.01 -791.007 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="Score,1.30"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="12"
+#! TYPE="Bufferer"
+#! VERSION="11"
+#! POSITION="2183.52 -504.005"
+#! BOUNDING_RECT="2183.52 -504.005 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="BUFFERED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="INTERP_SEGMENTS" PARM_VALUE="8"/>
+#! <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="OFFSET" PARM_VALUE="50"/>
+#! <XFORM_PARM PARM_NAME="CAP_STYLE" PARM_VALUE="Round"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Bufferer"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="18"
+#! TYPE="SpatialFilter"
+#! VERSION="6"
+#! POSITION="3683.54 -1839.02"
+#! BOUNDING_RECT="3683.54 -1839.02 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="USE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HBLOCK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Time " IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_predicate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="USE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="HBLOCK" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="Time " IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="PREDATTR" PARM_VALUE="_predicate"/>
+#! <XFORM_PARM PARM_NAME="USE_BOUNDING_BOX" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PREDICATE_VALUE" PARM_VALUE="Intersects"/>
+#! <XFORM_PARM PARM_NAME="BASE_TYPE" PARM_VALUE="Multiple Filters"/>
+#! <XFORM_PARM PARM_NAME="CURVE_BOUNDARY_RULE_PARAM" PARM_VALUE="Default Rule"/>
+#! <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PASS_CRITERIA" PARM_VALUE="Pass Against One Filter"/>
+#! <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="MERGE_ATTRS" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpatialFilter"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="20"
+#! TYPE="ExpressionEvaluator"
+#! VERSION="3"
+#! POSITION="4333.83 -900.532"
+#! BOUNDING_RECT="4333.83 -900.532 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="USE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HBLOCK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Time " IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_predicate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_related_candidates" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="maxScore" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="minScore" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="Time&lt;space&gt;"/>
+#! <XFORM_PARM PARM_NAME="EXPRESSION" PARM_VALUE="@Value(Time ) * @Value(maxScore)"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="PARAM_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ExpressionEvaluator"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ACTION" PARM_VALUE="Overwrite Existing Attributes"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="22"
+#! TYPE="AttributeCreator"
+#! VERSION="6"
+#! POSITION="2291.52 -1036.51"
+#! BOUNDING_RECT="2291.52 -1036.51 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="USE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HBLOCK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Time " IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="Time&lt;space&gt;,50"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="28"
+#! TYPE="SpatialRelator"
+#! VERSION="5"
+#! POSITION="2800.52 -697.506"
+#! BOUNDING_RECT="2800.52 -697.506 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="Output"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="USE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HBLOCK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Time " IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_related_candidates" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="CURVE_BOUNDARY_RULE_PARAM" PARM_VALUE="Default Rule"/>
+#! <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="_relationships"/>
+#! <XFORM_PARM PARM_NAME="SUCCESS_ATTR" PARM_VALUE="_related_candidates"/>
+#! <XFORM_PARM PARM_NAME="PREDICATES" PARM_VALUE="INTERSECTS"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpatialRelator"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DIFFATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="CALC_CARD" PARM_VALUE="No"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="26"
+#! TYPE="Inspector"
+#! VERSION="3"
+#! POSITION="5289.98 -529.576"
+#! BOUNDING_RECT="5289.98 -529.576 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#! <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#! <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Inspector"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="31"
+#! TYPE="ListRangeExtractor"
+#! VERSION="0"
+#! POSITION="3286.53 -791.007"
+#! BOUNDING_RECT="3286.53 -791.007 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="USE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HBLOCK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Time " IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_related_candidates" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="maxScore" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="minScore" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="SRC_LIST" PARM_VALUE="_relationships{}.Score"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MIN" PARM_VALUE="minScore"/>
+#! <XFORM_PARM PARM_NAME="MAX" PARM_VALUE="maxScore"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListRangeExtractor"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="32"
+#! TYPE="Tester"
+#! VERSION="2"
+#! POSITION="3818.54 -791.007"
+#! BOUNDING_RECT="3818.54 -791.007 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15253"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="USE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HBLOCK" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Time " IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.LAYER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.Score" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_related_candidates" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="maxScore" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="minScore" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="USE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="HBLOCK" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="Time " IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="LAYER" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="Score" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.FID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.LAYER" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.HEIGHT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.Score" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.de9im" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_relationships{}.pass{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_related_candidates" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="maxScore" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="minScore" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;_related_candidates&lt;closeparen&gt; &gt; 0"/>
+#! <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#! <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="3"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="9"
+#! SOURCE_NODE="2"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="fo 2"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="10"
+#! SOURCE_NODE="2"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="11"
+#! SOURCE_NODE="2"
+#! TARGET_NODE="5"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="13"
+#! SOURCE_NODE="4"
+#! TARGET_NODE="12"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="14"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="12"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="15"
+#! SOURCE_NODE="6"
+#! TARGET_NODE="12"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="21"
+#! SOURCE_NODE="18"
+#! TARGET_NODE="20"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="false"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="23"
+#! SOURCE_NODE="16"
+#! TARGET_NODE="22"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="24"
+#! SOURCE_NODE="22"
+#! TARGET_NODE="18"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="false"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="29"
+#! SOURCE_NODE="12"
+#! TARGET_NODE="28"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="30"
+#! SOURCE_NODE="22"
+#! TARGET_NODE="28"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="34"
+#! SOURCE_NODE="28"
+#! TARGET_NODE="31"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="33"
+#! SOURCE_NODE="31"
+#! TARGET_NODE="32"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="35"
+#! SOURCE_NODE="32"
+#! TARGET_NODE="20"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="36"
+#! SOURCE_NODE="20"
+#! TARGET_NODE="37"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! <ATTR_LINK
+#! IDENTIFIER="65572"
+#! SOURCE_NODE="20"
+#! TARGET_NODE="37"
+#! SOURCE_PORT_DESC="ao 0 3"
+#! TARGET_PORT_DESC="3"
+#! />
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE SourceDataset_ARCGIS_LAYER_1,ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX_ARCGIS_LAYER_1,ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY_ARCGIS_LAYER_1,ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX_ARCGIS_LAYER_1,ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY_ARCGIS_LAYER_1,ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE_ARCGIS_LAYER_1,ARCGIS_LAYER_IN_NETWORK_AUTHENTICATION_ARCGIS_LAYER_1,SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGIS_LAYER_1,SourceDataset_ARCGIS_LAYER_2,ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX_ARCGIS_LAYER_2,ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY_ARCGIS_LAYER_2,ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX_ARCGIS_LAYER_2,ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY_ARCGIS_LAYER_2,ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE_ARCGIS_LAYER_2,ARCGIS_LAYER_IN_NETWORK_AUTHENTICATION_ARCGIS_LAYER_2,SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGIS_LAYER_2,DestDataset_SHAPE_1,SHAPE_OUT_WRITE_SPATIAL_INDEX_SHAPE_1,SHAPE_OUT_COMPRESSED_SHAPE_FILE_SHAPE_1,SHAPE_OUT_SHAPE_WRT_ADV_PARM_GROUP_SHAPE_1,SHAPE_OUT_STRICT_COMPATIBILITY_SHAPE_1,SHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_SHAPE_1,_MEASURES_AS_Z_SHAPE_1,SHAPE_OUT_ENCODING_SHAPE_1
+DEFAULT_MACRO SourceDataset_ARCGIS_LAYER F:\Vancouver\481\Vancouver\rmsi data\buildings\Vancouver_buildings.shp
+GUI ESRI_LAYER SourceDataset_ARCGIS_LAYER Source Esri ArcGIS Layer:
+DEFAULT_MACRO SourceDataset_ARCGIS_LAYER_3 F:\Vancouver\481\Vancouver\Vancouver_Feb2010\City streets data package\public_streets.shp
+GUI ESRI_LAYER SourceDataset_ARCGIS_LAYER_3 Source Esri ArcGIS Layer:
+DEFAULT_MACRO DestDataset_SHAPE N:\Geog 481\Test
+GUI DIRNAME DestDataset_SHAPE Destination Esri Shape Folder:
+INCLUDE [ if {{$(SourceDataset_ARCGIS_LAYER)} == {}} { puts_real {Parameter 'SourceDataset_ARCGIS_LAYER' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_ARCGIS_LAYER_3)} == {}} { puts_real {Parameter 'SourceDataset_ARCGIS_LAYER_3' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_SHAPE)} == {}} { puts_real {Parameter 'DestDataset_SHAPE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} ARCGIS_LAYER
+MULTI_READER_KEYWORD{0} ARCGIS_LAYER_1
+MULTI_READER_GEN_DIRECTIVES{0} 
+MULTI_READER_TYPE{1} ARCGIS_LAYER
+MULTI_READER_KEYWORD{1} ARCGIS_LAYER_2
+MULTI_READER_GEN_DIRECTIVES{1} 
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} SHAPE
+MULTI_WRITER_KEYWORD{0} SHAPE_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ARCGIS_LAYER_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGIS_LAYER ARCGIS_LAYER_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ARCGIS_LAYER_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGIS_LAYER ARCGIS_LAYER_1
+DEFAULT_MACRO SourceDataset_ARCGIS_LAYER_1 $(SourceDataset_ARCGIS_LAYER)
+GUI ESRI_LAYER SourceDataset_ARCGIS_LAYER_1 Source Esri ArcGIS Layer:
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX_ARCGIS_LAYER_1 0
+ARCGIS_LAYER_1_SEARCH_ENVELOPE "$(ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX_ARCGIS_LAYER_1)"
+GUI OPTIONAL FLOAT ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX_ARCGIS_LAYER_1 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY_ARCGIS_LAYER_1 0
+ARCGIS_LAYER_1_SEARCH_ENVELOPE "$(ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY_ARCGIS_LAYER_1)"
+GUI OPTIONAL FLOAT ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY_ARCGIS_LAYER_1 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX_ARCGIS_LAYER_1 0
+ARCGIS_LAYER_1_SEARCH_ENVELOPE "$(ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX_ARCGIS_LAYER_1)"
+GUI OPTIONAL FLOAT ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX_ARCGIS_LAYER_1 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY_ARCGIS_LAYER_1 0
+ARCGIS_LAYER_1_SEARCH_ENVELOPE "$(ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY_ARCGIS_LAYER_1)"
+GUI OPTIONAL FLOAT ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY_ARCGIS_LAYER_1 Maximum Y:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+DEFAULT_MACRO ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE_ARCGIS_LAYER_1 NO
+ARCGIS_LAYER_1_CLIP_TO_ENVELOPE "$(ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE_ARCGIS_LAYER_1)"
+GUI OPTIONAL CHECKBOX ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE_ARCGIS_LAYER_1 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_NETWORK_AUTHENTICATION_ARCGIS_LAYER_1 
+ARCGIS_LAYER_1_NETWORK_AUTHENTICATION "$(ARCGIS_LAYER_IN_NETWORK_AUTHENTICATION_ARCGIS_LAYER_1)"
+GUI OPTIONAL AUTHENTICATOR ARCGIS_LAYER_IN_NETWORK_AUTHENTICATION_ARCGIS_LAYER_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# PR:31021
+# Include this file in workbench source preamble section to enable the ability
+# to specify a coordinate system for search envelope processing
+# ===========================================================================
+DEFAULT_MACRO SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGIS_LAYER_1 
+GUI OPTIONAL COORDSYS SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGIS_LAYER_1 Search Envelope Coordinate System:
+ARCGIS_LAYER_1_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGIS_LAYER_1)"
+# ===========================================================================
+ARCGIS_LAYER_1_DATASET "$(SourceDataset_ARCGIS_LAYER_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ARCGIS_LAYER_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGIS_LAYER ARCGIS_LAYER_2
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ARCGIS_LAYER_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ARCGIS_LAYER ARCGIS_LAYER_2
+DEFAULT_MACRO SourceDataset_ARCGIS_LAYER_2 $(SourceDataset_ARCGIS_LAYER_3)
+GUI ESRI_LAYER SourceDataset_ARCGIS_LAYER_2 Source Esri ArcGIS Layer:
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX_ARCGIS_LAYER_2 0
+ARCGIS_LAYER_2_SEARCH_ENVELOPE "$(ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX_ARCGIS_LAYER_2)"
+GUI OPTIONAL FLOAT ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINX_ARCGIS_LAYER_2 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY_ARCGIS_LAYER_2 0
+ARCGIS_LAYER_2_SEARCH_ENVELOPE "$(ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY_ARCGIS_LAYER_2)"
+GUI OPTIONAL FLOAT ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MINY_ARCGIS_LAYER_2 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX_ARCGIS_LAYER_2 0
+ARCGIS_LAYER_2_SEARCH_ENVELOPE "$(ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX_ARCGIS_LAYER_2)"
+GUI OPTIONAL FLOAT ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXX_ARCGIS_LAYER_2 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY_ARCGIS_LAYER_2 0
+ARCGIS_LAYER_2_SEARCH_ENVELOPE "$(ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY_ARCGIS_LAYER_2)"
+GUI OPTIONAL FLOAT ARCGIS_LAYER_IN_SEARCH_ENVELOPE_MAXY_ARCGIS_LAYER_2 Maximum Y:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+DEFAULT_MACRO ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE_ARCGIS_LAYER_2 NO
+ARCGIS_LAYER_2_CLIP_TO_ENVELOPE "$(ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE_ARCGIS_LAYER_2)"
+GUI OPTIONAL CHECKBOX ARCGIS_LAYER_IN_CLIP_TO_ENVELOPE_ARCGIS_LAYER_2 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO ARCGIS_LAYER_IN_NETWORK_AUTHENTICATION_ARCGIS_LAYER_2 
+ARCGIS_LAYER_2_NETWORK_AUTHENTICATION "$(ARCGIS_LAYER_IN_NETWORK_AUTHENTICATION_ARCGIS_LAYER_2)"
+GUI OPTIONAL AUTHENTICATOR ARCGIS_LAYER_IN_NETWORK_AUTHENTICATION_ARCGIS_LAYER_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# PR:31021
+# Include this file in workbench source preamble section to enable the ability
+# to specify a coordinate system for search envelope processing
+# ===========================================================================
+DEFAULT_MACRO SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGIS_LAYER_2 
+GUI OPTIONAL COORDSYS SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGIS_LAYER_2 Search Envelope Coordinate System:
+ARCGIS_LAYER_2_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(SEARCH_ENVELOPE_COORDINATE_SYSTEM_ARCGIS_LAYER_2)"
+# ===========================================================================
+ARCGIS_LAYER_2_DATASET "$(SourceDataset_ARCGIS_LAYER_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "SHAPE_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER SHAPE SHAPE_1
+# ============================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the Esri SHAPE files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_SHAPE_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER SHAPE SHAPE_1
+DEFAULT_MACRO DestDataset_SHAPE_1 $(DestDataset_SHAPE)
+GUI DIRNAME DestDataset_SHAPE_1 Destination Esri Shape Folder:
+# ============================================================================
+# Note that this mapping file has been generated to output 3d shape files
+# that have measures. FME will leave the measure data blank, but other tools
+# may update these files later to hold measures. Remember that 3d shape files
+# with measures cannot be read by ArcView 3.0a [unless you've applied the
+# latest database patch] and older, and ArcExplorer 1.1 and older.
+# If the input data source had elevation data, it will be written to the
+# output files. Otherwise, the elevation will be set to 0.
+# If you want to output "normal" 2d files compatible with older
+# ESRI products, then just remove the "z" from the geometry keywords
+# (i.e. replace "shape_polygonz" with "shape_polygon")
+# If you want to output 2d files with measures, then just replace the "z"
+# in the geometry keywords with a "m"
+# (i.e. replace "shape_polygonz" with "shape_polygonm")
+SHAPE_1_COORDINATE_SYSTEM_GRANULARITY FEATURE_TYPE
+DEFAULT_MACRO SHAPE_OUT_SHAPE_FILE_TYPE_SHAPE_1 3dm
+SHAPE_1_SHAPE_FILE_TYPE "$(SHAPE_OUT_SHAPE_FILE_TYPE_SHAPE_1)"
+# ============================================================================
+# Determines whether the attribute names should be uppercased, or whether they
+# should stay as specified in the shape file. The default will be Yes for
+# backwards compatibility. Once the mapping file/workspace has been generated,
+# the value for this keyword should not be changed.
+DEFAULT_MACRO SHAPE_OUT_UPPER_CASE_ATTR_NAMES_SHAPE_1 No
+SHAPE_1_UPPER_CASE_ATTR_NAMES "$(SHAPE_OUT_UPPER_CASE_ATTR_NAMES_SHAPE_1)"
+# ============================================================================
+# PR2557: Specifies whether or not the reader will generate spatial index files
+DEFAULT_MACRO SHAPE_OUT_WRITE_SPATIAL_INDEX_SHAPE_1 No
+SHAPE_1_WRITE_SPATIAL_INDEX "$(SHAPE_OUT_WRITE_SPATIAL_INDEX_SHAPE_1)"
+GUI CHECKBOX SHAPE_OUT_WRITE_SPATIAL_INDEX_SHAPE_1 Yes%No Write Spatial Index
+DEFAULT_MACRO SHAPE_OUT_COMPRESSED_SHAPE_FILE_SHAPE_1 No
+SHAPE_1_COMPRESSED_SHAPE_FILE "$(SHAPE_OUT_COMPRESSED_SHAPE_FILE_SHAPE_1)"
+GUI CHECKBOX SHAPE_OUT_COMPRESSED_SHAPE_FILE_SHAPE_1 Yes%No Create Compressed Shape File (.shz)
+DEFAULT_MACRO SHAPE_OUT_SHAPE_WRT_ADV_PARM_GROUP_SHAPE_1 
+GUI DISCLOSUREGROUP SHAPE_OUT_SHAPE_WRT_ADV_PARM_GROUP_SHAPE_1 STRICT_COMPATIBILITY%PRESERVE_RING_VERTEX_ORDER Advanced
+# ============================================================================
+# BUG31474: Add an Strict compatibility flag to prevent some apps from
+# crashing when record lengths are too long. By default, we want to write
+# compatible files going forward.
+DEFAULT_MACRO SHAPE_OUT_STRICT_COMPATIBILITY_SHAPE_1 Yes
+SHAPE_1_STRICT_COMPATIBILITY "$(SHAPE_OUT_STRICT_COMPATIBILITY_SHAPE_1)"
+GUI CHECKBOX SHAPE_OUT_STRICT_COMPATIBILITY_SHAPE_1 Yes%No Strict Compatibility
+# ============================================================
+# BUG39095: Add an option to preserve input ring vertex order.
+DEFAULT_MACRO SHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_SHAPE_1 No
+SHAPE_1_PRESERVE_RING_VERTEX_ORDER "$(SHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_SHAPE_1)"
+GUI CHECKBOX SHAPE_OUT_PRESERVE_RING_VERTEX_ORDER_SHAPE_1 Yes%No Preserve Ring Vertex Order
+# ============================================================================
+# The following GUI line sets whether measure values in the shape files should
+# be treated as elevations.
+DEFAULT_MACRO _MEASURES_AS_Z_SHAPE_1 no
+GUI CHOICE _MEASURES_AS_Z_SHAPE_1 yes%no Treat Measures as Elevation:
+SHAPE_1_MEASURES_AS_Z $(_MEASURES_AS_Z_SHAPE_1)
+# ============================================================================
+# The following keyword allows the user to choose what encoding to
+# use for outputting the shape file
+# BUG31194: For backwards compatibility and not outputting a .cpg file
+# we have chosen to make the writer default encoding system (ANSI)
+DEFAULT_MACRO SHAPE_OUT_ENCODING_SHAPE_1 ANSI
+GUI OPTIONAL ENCODING SHAPE_OUT_ENCODING_SHAPE_1 ANSI%BIG5%EUC%HKBIG5%ISO%OEM%SJIS%UTF-8%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP874%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO-8859-11%ISO8859-13%ISO8859-15%WINDOWS-874 Character Encoding:
+SHAPE_1_ENCODING $(SHAPE_OUT_ENCODING_SHAPE_1)
+SHAPE_1_DATASET "$(DestDataset_SHAPE_1)"
+#! END_DEST_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)BuildingScoreAssignment.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+LOG_MAX_PRECISION Yes
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_ARCGIS_LAYER_1 ARCGIS_LAYER_1
+DEFAULT_MACRO DATASET_KEYWORD_ARCGIS_LAYER_2 ARCGIS_LAYER_2
+DEFAULT_MACRO DATASET_KEYWORD_SHAPE_1 SHAPE_1
+# -------------------------------------------------------------------------
+
+ARCGIS_LAYER_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ARCGIS_LAYER_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME BuildingScoreAssignment
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+ARCGIS_LAYER_1_DEF Vancouver_buildings   geodb_type                   geodb_polygon   FID                          integer   LAYER                        char(254)   HEIGHT                       double
+# -------------------------------------------------------------------------
+ARCGIS_LAYER_2_DEF public_streets   geodb_type                   geodb_polyline   FID                          integer   USE                          char(20)   HBLOCK                       char(102)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   INPUT FEATURE_TYPE *    ROUTE ARCGIS_LAYER ARCGIS_LAYER_1::Vancouver_buildings multi_reader_keyword,$(DATASET_KEYWORD_ARCGIS_LAYER_1) TO FME_GENERIC ::Vancouver_buildings ALIAS_GEOMETRY    ROUTE ARCGIS_LAYER ARCGIS_LAYER_2::public_streets multi_reader_keyword,$(DATASET_KEYWORD_ARCGIS_LAYER_2) TO FME_GENERIC ::public_streets ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ARCGIS_LAYER_1_MERGE_DEF ARCGIS_LAYER_1::Vancouver_buildings EXACT Vancouver_buildings DEFLINE geodb_type,geodb_polygon,FID,integer,LAYER,char<openparen>254<closeparen>,HEIGHT,double
+ARCGIS_LAYER_2_MERGE_DEF ARCGIS_LAYER_2::public_streets EXACT public_streets DEFLINE geodb_type,geodb_polyline,FID,integer,USE,char<openparen>20<closeparen>,HBLOCK,char<openparen>102<closeparen>
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_4 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV INPUT  FEATURE_TYPE public_streets ATTR Time<space> 50    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT 
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator_4 OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT_0_E4SXNhkeM5E=   OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT_1_E4SXNhkeM5E=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator_4_OUTPUT_0_E4SXNhkeM5E= Disabled Nuker -1 24"   INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT_0_E4SXNhkeM5E=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * SpatialFilterFactory    FACTORY_NAME SpatialFilter    INPUT CANDIDATE FEATURE_TYPE AttributeCreator_4_OUTPUT_0_E4SXNhkeM5E=    PREDICATE "INTERSECTS"    USE_BOUNDING_BOX NO    MULTIPLE_BASES YES    MERGE_BASE_ATTR YES    PREDICATE_ATTR "_predicate"    BOOLEAN_OPERATOR OR    DIMENSION 2    CURVE_BOUNDARY_RULE ENDPOINTS_MOD2    OUTPUT PASSED FEATURE_TYPE SpatialFilter_PASSED
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpatialFilter_PASSED Disabled Nuker -1 21"   INPUT FEATURE_TYPE SpatialFilter_PASSED
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter    INPUT  FEATURE_TYPE Vancouver_buildings    OUTPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0
+
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_0 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>HEIGHT<closeparen>,TestFilter) <= 10 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_<at>Value<openparen>HEIGHT<closeparen><space><lt><space>10 OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_TestFactory_1 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>HEIGHT<closeparen>,TestFilter) > 10 ENCODED TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>HEIGHT<closeparen>,TestFilter) <= 40 ENCODED BOOLEAN_OPERATOR AND COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_<at>Value<openparen>HEIGHT<closeparen><space><gt><space>10 OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_2
+FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_<lt>UNFILTERED<gt> INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_2 OUTPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_3 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV INPUT  FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt> ATTR Score 1.30    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT 
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator_2 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV INPUT  FEATURE_TYPE TestFilter_<at>Value<openparen>HEIGHT<closeparen><space><gt><space>10 ATTR Score 1.15    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT 
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV INPUT  FEATURE_TYPE TestFilter_<at>Value<openparen>HEIGHT<closeparen><space><lt><space>10 ATTR Score 1    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * PolygonDissolveFactory    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    FACTORY_NAME Bufferer    PRE_BUFFER "50" "8" CAP_ROUND FULL    DISSOLVE_MODE GEOS    OUTPUT POLYGON FEATURE_TYPE Bufferer_BUFFERED    OUTPUT NON_POLYGON FEATURE_TYPE Bufferer_BUFFERED
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * SpatialRelationshipFactory    FACTORY_NAME SpatialRelator    INPUT BASE FEATURE_TYPE AttributeCreator_4_OUTPUT_1_E4SXNhkeM5E=    INPUT CANDIDATE FEATURE_TYPE Bufferer_BUFFERED    PREDICATE "INTERSECTS"    LIST_NAME "_relationships"    SUCCESS_ATTR "_related_candidates"    CURVE_BOUNDARY_RULE ENDPOINTS_MOD2    CALCULATE_CARDINALITY No    OUTPUT TAGGED FEATURE_TYPE SpatialRelator_Output
+
+# -------------------------------------------------------------------------
+
+Tcl2 proc ListRangeExtractor_minmaxer {} {    set firstTime 1;    set min {};    set max {};    foreach attr [FME_AttributeNames] {    		 regsub -all \"{\[0-9\]+}\" $attr \"{}\" flatAttr;        if {$flatAttr == \"_relationships{}.Score\" }        {          set attrVal [FME_GetAttribute $attr];          set checkAttr 1;          if {$attrVal == {} && [FME_IsAttributeNull $attr]}          {    	       set checkAttr 0;          };          if {$checkAttr} { 		         if {$firstTime} { 		           set min $attrVal; 		           set max $attrVal; 		           set firstTime 0; 		         } else { 		           if {$attrVal < $min} {set min $attrVal}; 		           if {$attrVal > $max} {set max $attrVal};  		         }; 		     }; 	     };    };    FME_SetAttribute {"minScore"} $min;    FME_SetAttribute {"maxScore"} $max; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME ListRangeExtractor    INPUT  FEATURE_TYPE SpatialRelator_Output    OUTPUT FEATURE_TYPE ListRangeExtractor_OUTPUT         @Tcl2("ListRangeExtractor_minmaxer")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE ListRangeExtractor_OUTPUT    TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_related_candidates<closeparen>,Tester) > 0 ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
+# -------------------------------------------------------------------------
+
+Tcl2 proc ExpressionEvaluator_evaluator {} {    if {{SELECTED} == {OUTGOING}} {      set attr [FME_DecodeText {<Unused>}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {Time<space>};      if {[string length $attrAll] == 0} { return; };      set attrs [split {Time<space>} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPAGATE_MISSING_TYPED_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {<at>Value<openparen>Time<space><closeparen><space>*<space><at>Value<openparen>maxScore<closeparen>};     lappend parmList {FLOAT};    };    lappend parmList {ExpressionEvaluator};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME ExpressionEvaluator    INPUT  FEATURE_TYPE SpatialFilter_PASSED    INPUT  FEATURE_TYPE Tester_PASSED    OUTPUT FEATURE_TYPE ExpressionEvaluator_OUTPUT         @Tcl2("ExpressionEvaluator_evaluator ")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC ExpressionEvaluator_OUTPUT TO SHAPE __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>Time_<comma>Time<lt>space<gt><closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>public_streets<closeparen> GEOMETRY   OUTPUT ROUTED FEATURE_TYPE * @FeatureType(ENCODED,@Value(__wb_out_feat_type__)) @RemoveAttributes(__wb_out_feat_type__)   OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
+FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
+# -------------------------------------------------------------------------
+SHAPE_1_DEF public_streets   SHAPE_GEOMETRY               shape_polylinez   FID                          number(11,0)   USE                          char(20)   HBLOCK                       char(102)   Time_                        char(200)   _predicate                   char(200)   LAYER                        char(254)   HEIGHT                       number(31,15)   Score                        char(200)   maxScore                     char(200)   minScore                     char(200)

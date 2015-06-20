@@ -1,0 +1,190 @@
+2015-06-19 22:05:13|   0.0|  0.0|INFORM|FME 2015.0 (20150217 - Build 15253 - macosx)
+2015-06-19 22:05:13|   0.0|  0.0|INFORM|FME_HOME is '/Applications/FME 2015/Engine/'
+2015-06-19 22:05:13|   0.0|  0.0|INFORM|FME Database Edition (node locked-crc)
+2015-06-19 22:05:13|   0.0|  0.0|INFORM|Serial Number: 0
+2015-06-19 22:05:13|   0.0|  0.0|INFORM|Temporary License: 117 days left.
+2015-06-19 22:05:13|   0.0|  0.0|INFORM|Machine host name is: Ramo-2.local
+2015-06-19 22:05:13|   0.0|  0.0|INFORM|START - ProcessID: 79922, peak process memory usage: 0 kB, current process memory usage: 40624 kB
+2015-06-19 22:05:13|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `/Applications/FME 2015/Engine//bin/fme' `/Volumes/STORE N GO/Vancouver/481/Scripts/wb-xlate-1434765913305_79875' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{03aa4ff5-d0e1-42bf-a716-0de251d951e4}'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Shared folders for formats are : /Applications/FME 2015/Engine/datasources;/Users/Ramin/Library/Application Support/FME/Formats
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Shared folders for transformers are : /Applications/FME 2015/Engine/transformers;/Users/Ramin/Library/Application Support/FME/Transformers
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Shared folders for coordinate systems are : /Users/Ramin/Library/Application Support/FME/CoordinateSystems
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Shared folders for coordinate system exceptions are : /Users/Ramin/Library/Application Support/FME/CoordinateSystemExceptions
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Shared folders for coordinate system grid overrides are : /Users/Ramin/Library/Application Support/FME/CoordinateSystemGridOverrides
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : /Users/Ramin/Library/Application Support/FME/CsmapTransformationExceptions
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Shared folders for transformer categories are : /Users/Ramin/Library/Application Support/FME/TransformerCategories
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Writer Keyword is `NULL_DEST'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `NULL_DEST_DEF'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Writer type is `NULL'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Current working folder is `/Volumes/STORE N GO/Vancouver/481/Scripts'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Temporary folder is `/tmp'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: FME_HOME is `/Applications/FME 2015/Engine/'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: FME_MF_DIR is '/Volumes/STORE N GO/Vancouver/481/Scripts/'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'Density.fmw'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2015.0'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|System Status: 1.73 TB of disk space available in the FME temporary folder (/tmp)
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|System Status: 23.17 GB of virtual memory available
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Operating System: Darwin 14.1.0 x86_64
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Platform: macosx
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|The memory allocator being used by FME is : `/usr/lib/system/libsystem_malloc.dylib'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Locale: C
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Process limits are 16.00 GB of physical memory and 23.17 GB of address space
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 22.00 GB of memory or 22.59 GB of address space
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 16.50 GB of memory and 16.94 GB of address space
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME Configuration: Autodetermining optimal maximum number of objects in memory
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Creating writer for format: NULL (Nothing)
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `NULL'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|DYLD_LIBRARY_PATH is not set
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Loaded module 'NULL' from file '/Applications/FME 2015/Engine/plugins/null.so'
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.7 20141021)
+2015-06-19 22:05:13|   0.1|  0.0|INFORM|Creating reader for format: 
+2015-06-19 22:05:13|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2015-06-19 22:05:13|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding SHAPE Reader with keyword SHAPE_1
+2015-06-19 22:05:13|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding SHAPE Reader with keyword SHAPE_2
+2015-06-19 22:05:13|   0.2|  0.0|INFORM|Using Multi Reader $Revision$ ( $Date$ ) with keyword `MULTI_READER' to read multiple datasets
+2015-06-19 22:05:13|   0.2|  0.0|INFORM|Creating reader for format: Esri Shape
+2015-06-19 22:05:13|   0.2|  0.0|INFORM|Using Shape Reader $Revision$ ( $Date$ ) to read shape files from folder `/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Dec2009/streetLighting ata package/'
+2015-06-19 22:05:13|   0.2|  0.0|INFORM|SHAPE_1 Reader: Using enhanced geometry
+2015-06-19 22:05:13|   0.2|  0.0|INFORM|Shape Reader: Allowing attribute names with mixed case
+2015-06-19 22:05:14|   0.2|  0.0|INFORM|Opened Shape File /Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Dec2009/streetLighting ata package/SL_NODE_LBL_point.shp for input
+2015-06-19 22:05:14|   0.2|  0.0|INFORM|Opened DBF File '/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Dec2009/streetLighting ata package/SL_NODE_LBL_point.dbf' for input
+2015-06-19 22:05:14|   0.2|  0.0|INFORM|DBF File '/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Dec2009/streetLighting ata package/SL_NODE_LBL_point.dbf' has fields: LABEL char(254)
+2015-06-19 22:05:14|   0.3|  0.2|INFORM|The OGC definition of the FME coordinate system '_UTM83-10_0' is 'PROJCS["NAD_1983_UTM_Zone_10N",GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-123.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]'
+2015-06-19 22:05:14|   0.3|  0.0|INFORM|FME Configuration: Source coordinate system for reader SHAPE_1[SHAPE] set to `_UTM83-10_0' as read from input data
+2015-06-19 22:05:14|   0.3|  0.0|INFORM|Coordinate System `_UTM83-10_0' parameters: CS_NAME=`_UTM83-10_0' DESC_NM=`UTM with NAD83 datum, Zone 10, Meter; Central Meridian 123d W' DT_NAME=`NAD83' ESRI_WKT=`PROJCS["NAD_1983_UTM_Zone_10N",GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-123.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]' GROUP=`UTM83' MAP_SCL=`1' MAX_LAT=`86.9333333333333' MAX_LNG=`-119.25' MIN_LAT=`25.4166666666667' MIN_LNG=`-126.75' PARM1=`-123' PROJ=`TM' QUAD=`1' SCL_RED=`0.9996' SOURCE=`Snyder, J.P, 1987, Map Projections - A Working Manual' UNIT=`METER' X_OFF=`500000.0' Y_OFF=`0.0' 
+2015-06-19 22:05:14|   0.3|  0.0|INFORM|Shape Reader: Bounding box of shapefile `/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Dec2009/streetLighting ata package/SL_NODE_LBL_POINT' is: (483691.573627753,5449753.22409723),(498320.526318762,5461587.0300429)
+2015-06-19 22:05:14|   0.3|  0.0|INFORM|Shape Reader: Bounding box of shapefile(s) selected from folder `/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Dec2009/streetLighting ata package/' is: (483691.573627753,5449753.22409723),(498320.526318762,5461587.0300429)
+2015-06-19 22:05:14|   0.4|  0.0|INFORM|Loaded module 'LogCount_func' from file '/Applications/FME 2015/Engine/plugins/logcount_func.so'
+2015-06-19 22:05:14|   0.4|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.7 20141021)
+2015-06-19 22:05:14|   0.4|  0.0|INFORM|Creating writer for format: FME Feature Store (FFS)
+2015-06-19 22:05:14|   0.4|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2015-06-19 22:05:14|   0.4|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.7 20141021)
+2015-06-19 22:05:14|   0.4|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.7 20141021)
+2015-06-19 22:05:14|   0.4|  0.0|INFORM|Loaded module 'SpatialRelationshipFactory' from file '/Applications/FME 2015/Engine/plugins/spatialrelationshipfactory.so'
+2015-06-19 22:05:14|   0.4|  0.0|INFORM|FME API version of module 'SpatialRelationshipFactory' matches current internal version (3.7 20141021)
+2015-06-19 22:05:14|   0.5|  0.0|INFORM|Overlaying points on areas
+2015-06-19 22:05:15|   0.7|  0.3|INFORM|Reading source feature # 2500
+2015-06-19 22:05:15|   1.0|  0.3|INFORM|Reading source feature # 5000
+2015-06-19 22:05:15|   1.3|  0.3|INFORM|Reading source feature # 7500
+2015-06-19 22:05:16|   1.6|  0.3|INFORM|Reading source feature # 10000
+2015-06-19 22:05:16|   1.8|  0.3|INFORM|Reading source feature # 12500
+2015-06-19 22:05:16|   2.1|  0.3|INFORM|Reading source feature # 15000
+2015-06-19 22:05:16|   2.4|  0.3|INFORM|Reading source feature # 17500
+2015-06-19 22:05:17|   2.6|  0.3|INFORM|Reading source feature # 20000
+2015-06-19 22:05:17|   2.9|  0.3|INFORM|Reading source feature # 22500
+2015-06-19 22:05:17|   3.2|  0.3|INFORM|Reading source feature # 25000
+2015-06-19 22:05:18|   3.4|  0.3|INFORM|Reading source feature # 27500
+2015-06-19 22:05:18|   3.7|  0.3|INFORM|Reading source feature # 30000
+2015-06-19 22:05:18|   4.0|  0.3|INFORM|Reading source feature # 32500
+2015-06-19 22:05:18|   4.3|  0.3|INFORM|Reading source feature # 35000
+2015-06-19 22:05:19|   4.4|  0.2|INFORM|Continuing to process geometric dissolving tasks.  At number: 36540
+2015-06-19 22:05:19|   4.5|  0.1|INFORM|Reading source feature # 37500
+2015-06-19 22:05:19|   4.8|  0.3|INFORM|Reading source feature # 40000
+2015-06-19 22:05:19|   5.1|  0.3|INFORM|Reading source feature # 42500
+2015-06-19 22:05:19|   5.3|  0.3|INFORM|Reading source feature # 45000
+2015-06-19 22:05:20|   5.6|  0.3|INFORM|Reading source feature # 47500
+2015-06-19 22:05:20|   5.9|  0.3|INFORM|Reading source feature # 50000
+2015-06-19 22:05:20|   6.1|  0.3|INFORM|Reading source feature # 52500
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|Creating reader for format: Esri Shape
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|Using Shape Reader $Revision$ ( $Date$ ) to read shape files from folder `/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Feb2010/City streets data package/'
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|SHAPE_2 Reader: Using enhanced geometry
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|Shape Reader: Allowing attribute names with mixed case
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|Opened Shape File /Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Feb2010/City streets data package/public_streets.shp for input
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|Opened DBF File '/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Feb2010/City streets data package/public_streets.dbf' for input
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|DBF File '/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Feb2010/City streets data package/public_streets.dbf' has fields: USE char(20), HBLOCK char(102)
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|The OGC definition of the FME coordinate system 'UTM83-10' is 'PROJCS["NAD_1983_UTM_Zone_10N",GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137,298.257222101]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000],PARAMETER["False_Northing",0],PARAMETER["Central_Meridian",-123],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0],UNIT["Meter",1]]'
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|FME Configuration: Source coordinate system for reader SHAPE_2[SHAPE] set to `UTM83-10' as read from input data
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|Coordinate System `UTM83-10' parameters: CS_NAME=`UTM83-10' DESC_NM=`UTM with NAD83 datum, Zone 10, Meter; Central Meridian 123d W' DT_NAME=`NAD83' GROUP=`UTM83' MAP_SCL=`1' MAX_LAT=`86.9333333333333' MAX_LNG=`-119.25' MIN_LAT=`25.4166666666667' MIN_LNG=`-126.75' PARM1=`-123' PROJ=`TM' QUAD=`1' SCL_RED=`0.9996' SOURCE=`Snyder, J.P, 1987, Map Projections - A Working Manual' UNIT=`METER' X_OFF=`500000.0' Y_OFF=`0.0' 
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|Shape Reader: Bounding box of shapefile `/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Feb2010/City streets data package/PUBLIC_STREETS' is: (483275.027341308,5449733.29747108),(499103.291289557,5460204.3191864)
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|Shape Reader: Bounding box of shapefile(s) selected from folder `/Volumes/STORE N GO/Vancouver/481/Vancouver/Vancouver_Feb2010/City streets data package/' is: (483275.027341308,5449733.29747108),(499103.291289557,5460204.3191864)
+2015-06-19 22:05:20|   6.2|  0.0|INFORM|Continuing to process geometric dissolving tasks.  At number: 1
+2015-06-19 22:05:21|   6.4|  0.2|INFORM|Reading source feature # 55000
+2015-06-19 22:05:21|   6.7|  0.3|INFORM|Reading source feature # 57500
+2015-06-19 22:05:21|   7.0|  0.3|INFORM|Reading source feature # 60000
+2015-06-19 22:05:21|   7.3|  0.3|INFORM|Reading source feature # 62500
+2015-06-19 22:05:22|   7.6|  0.3|INFORM|Reading source feature # 65000
+2015-06-19 22:05:22|   7.9|  0.3|INFORM|Reading source feature # 67500
+2015-06-19 22:05:22|   8.1|  0.3|INFORM|Reading source feature # 70000
+2015-06-19 22:05:22|   8.2|  0.1|INFORM|MULTI_READER(MULTI_READER): Done reading 70662 features from 2 readers
+2015-06-19 22:05:22|   8.2|  0.0|INFORM|Emptying factory pipeline
+2015-06-19 22:05:22|   8.2|  0.0|STATS |Router and Unexpected Input Remover(RoutingFactory): Tested 70662 input feature(s), wrote 70662 output feature(s): 70662 matched merge filters, 70662 were routed to output, 0 could not be routed.
+2015-06-19 22:05:22|   8.2|  0.0|STATS |Unexpected Input Remover Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2015-06-19 22:05:22|   8.2|  0.0|STATS |SL_NODE_LBL_point (SHAPE_1) Splitter(TeeFactory): Cloned 52901 input feature(s) into 105802 output feature(s)
+2015-06-19 22:05:22|   8.2|  0.0|STATS |SL_NODE_LBL_point_0_t3iDEdBuU/Q= Feature Counter -1 12(TeeFactory): Cloned 52901 input feature(s) into 52901 output feature(s)
+2015-06-19 22:05:22|   8.2|  0.0|STATS |SL_NODE_LBL_point_1_t3iDEdBuU/Q= Feature Counter -1 7(TeeFactory): Cloned 52901 input feature(s) into 52901 output feature(s)
+2015-06-19 22:05:22|   8.2|  0.0|STATS |public_streets Feature Counter -1 31(TeeFactory): Cloned 17761 input feature(s) into 17761 output feature(s)
+2015-06-19 22:05:22|   8.2|  0.0|STATS |Bufferer_2_BUFFERED Feature Counter -1 24(TeeFactory): Cloned 17761 input feature(s) into 17761 output feature(s)
+2015-06-19 22:05:22|   8.2|  0.0|STATS |Bufferer_BUFFERED Feature Counter -1 10(TeeFactory): Cloned 52901 input feature(s) into 52901 output feature(s)
+2015-06-19 22:05:22|   8.2|  0.0|INFORM|Creating spatial index of 52901 area features
+2015-06-19 22:05:23|   8.5|  0.3|INFORM|Computing relationships between 52901 input areas and 52901 input points
+2015-06-19 22:05:23|   8.5|  0.0|STATS |Storing feature(s) to FME feature store file `/tmp/Density_220513/inspector.ffs'
+2015-06-19 22:05:23|   8.5|  0.0|STATS |Storing feature(s) to FME feature store file `/tmp/Density_220513/inspector.fsc'
+2015-06-19 22:05:23|   8.5|  0.0|STATS |Storing feature(s) to FME feature store file `/tmp/fctspatrel1434765914327_79922'
+2015-06-19 22:05:26|  12.1|  3.6|STATS |Input Summary:  52901 area(s), 52901 point(s), and 0 line(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |Output Summary: 0 area(s), 52901 point(s), and 0 line(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |PointOnAreaOverlayer_POINT Feature Counter -1 33(TeeFactory): Cloned 52901 input feature(s) into 52901 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |TestFilter(TeeFactory): Cloned 52901 input feature(s) into 52901 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |TestFilter_TestFactory_0(TestFactory): Tested 52901 input feature(s) -- 8342 feature(s) passed and 44559 feature(s) failed
+2015-06-19 22:05:26|  12.1|  0.0|STATS |TestFilter_TestFactory_1(TestFactory): Tested 44559 input feature(s) -- 750 feature(s) passed and 43809 feature(s) failed
+2015-06-19 22:05:26|  12.1|  0.0|STATS |TestFilter_<lt>UNFILTERED<gt>(TeeFactory): Cloned 43809 input feature(s) into 43809 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |TestFilter <lt>UNFILTERED<gt> Output Nuker(TeeFactory): Cloned 43809 input feature(s) into 0 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |TestFilter_<at>Value<openparen>_overlaps<closeparen><space>!=<space>1 Feature Counter -1 36(TeeFactory): Cloned 8342 input feature(s) into 8342 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |TestFilter_<at>Value<openparen>_overlaps<closeparen><space><gt><space>3 Feature Counter -1 37(TeeFactory): Cloned 750 input feature(s) into 750 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |AttributeCreator_2 OUTPUT Splitter(TeeFactory): Cloned 750 input feature(s) into 1500 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |AttributeCreator_2_OUTPUT_0_KpUyI6tMDVI= Feature Counter -1 39(TeeFactory): Cloned 750 input feature(s) into 750 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |AttributeCreator_2_OUTPUT_1_KpUyI6tMDVI= Feature Counter -1 42(TeeFactory): Cloned 750 input feature(s) into 750 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |AttributeCreator OUTPUT Splitter(TeeFactory): Cloned 8342 input feature(s) into 16684 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |AttributeCreator_OUTPUT_0_olPiq+C1D00= Feature Counter -1 40(TeeFactory): Cloned 8342 input feature(s) into 8342 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|STATS |AttributeCreator_OUTPUT_1_olPiq+C1D00= Feature Counter -1 38(TeeFactory): Cloned 8342 input feature(s) into 8342 output feature(s)
+2015-06-19 22:05:26|  12.1|  0.0|INFORM|SpatialRelator_2(SpatialRelationshipFactory): Processing 26853 feature(s) in 0 group(s)...
+2015-06-19 22:05:37|  23.1| 11.0|STATS |SpatialRelator_2(SpatialRelationshipFactory): Total results: processed 17761 BASE(s) and 9092 CANDIDATE(s).  42131 BASE/CANDIDATE pair(s) had at least one true predicate, with a total of 42131 true predicate(s) found
+2015-06-19 22:05:37|  23.1|  0.0|STATS |SpatialRelator_2(SpatialRelationshipFactory): Total comparisons made: 47190
+2015-06-19 22:05:37|  23.1|  0.0|STATS |Stored 9092 feature(s) to FME feature store file `/tmp/fctspatrel1434765914327_79922'
+2015-06-19 22:05:37|  23.2|  0.0|STATS |SpatialRelator_2_Output Feature Counter -1 29(TeeFactory): Cloned 17761 input feature(s) into 17761 output feature(s)
+2015-06-19 22:05:37|  23.2|  0.0|STATS |ListRangeExtractor(TeeFactory): Cloned 17761 input feature(s) into 17761 output feature(s)
+2015-06-19 22:05:37|  23.2|  0.0|STATS |ListRangeExtractor_OUTPUT Feature Counter -1 41(TeeFactory): Cloned 17761 input feature(s) into 17761 output feature(s)
+2015-06-19 22:05:37|  23.2|  0.0|STATS |Inspector_3_DirCreator(CreationFactory): Created 1 features
+2015-06-19 22:05:37|  23.2|  0.0|STATS |Inspector_3_DirCreatorCleanerUpper(TeeFactory): Cloned 1 input feature(s) into 0 output feature(s)
+2015-06-19 22:05:37|  23.2|  0.0|STATS |Inspector_3_FeatureDirector(TestFactory): Tested 26853 input feature(s) -- 0 feature(s) passed and 26853 feature(s) failed
+2015-06-19 22:05:37|  23.2|  0.0|STATS |Inspector_3___FeatureDirector1(TestFactory): Tested 26853 input feature(s) -- 0 feature(s) passed and 26853 feature(s) failed
+2015-06-19 22:05:37|  23.2|  0.0|STATS |Inspector_3_VectorSetterUpper(TeeFactory): Cloned 26853 input feature(s) into 26853 output feature(s)
+2015-06-19 22:05:37|  23.2|  0.0|STATS |Inspector_3___PointCloudThinner(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2015-06-19 22:05:37|  23.2|  0.0|STATS |Inspector_3_RasterSetterUpper(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2015-06-19 22:05:37|  23.2|  0.0|STATS |Stored 26853 feature(s) to FME feature store file `/tmp/Density_220513/inspector.ffs'
+2015-06-19 22:05:37|  23.2|  0.0|INFORM|Saving spatial index into file '/tmp/Density_220513/inspector.fsi'
+2015-06-19 22:05:37|  23.2|  0.1|INFORM|Finished saving spatial index into file '/tmp/Density_220513/inspector.fsi'
+2015-06-19 22:05:38|  23.3|  0.1|STATS |Stored 1 feature(s) to FME feature store file `/tmp/Density_220513/inspector.fsc'
+2015-06-19 22:05:38|  23.3|  0.0|INFORM|Inspector_3_Recorder(RecorderFactory): Recorded 26853 feature(s) to file `/tmp/Density_220513/inspector.ffs'
+2015-06-19 22:05:38|  23.3|  0.0|STATS |Destination Feature Type Routing Correlator(RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2015-06-19 22:05:38|  23.3|  0.0|STATS |Final Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2015-06-19 22:05:38|  23.3|  0.0|STATS |f_41(CreationFactory): Created 1 features
+2015-06-19 22:05:38|  23.3|  0.0|STATS |f_42(TeeFactory): Cloned 1 input feature(s) into 0 output feature(s)
+2015-06-19 22:05:38|  23.3|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|INFORM|Feature output statistics for `FFS' writer using keyword `W_1':
+2015-06-19 22:05:38|  23.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|STATS |                               Features Written
+2015-06-19 22:05:38|  23.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|STATS |==============================================================================
+2015-06-19 22:05:38|  23.3|  0.0|STATS |Total Features Written                                                       0
+2015-06-19 22:05:38|  23.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|STATS |                            Features Read Summary
+2015-06-19 22:05:38|  23.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|STATS |SL_NODE_LBL_point                                                        52901
+2015-06-19 22:05:38|  23.3|  0.0|STATS |public_streets                                                           17761
+2015-06-19 22:05:38|  23.3|  0.0|STATS |==============================================================================
+2015-06-19 22:05:38|  23.3|  0.0|STATS |Total Features Read                                                      70662
+2015-06-19 22:05:38|  23.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|STATS |                           Features Written Summary
+2015-06-19 22:05:38|  23.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|STATS |==============================================================================
+2015-06-19 22:05:38|  23.3|  0.0|STATS |Total Features Written                                                       0
+2015-06-19 22:05:38|  23.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2015-06-19 22:05:38|  23.3|  0.0|INFORM|Translation was SUCCESSFUL with 0 warning(s) (0 feature(s) output)
+2015-06-19 22:05:38|  23.3|  0.0|INFORM|FME Session Duration: 24.4 seconds. (CPU: 22.3s user, 0.9s system)
+2015-06-19 22:05:38|  23.3|  0.0|INFORM|END - ProcessID: 79922, peak process memory usage: 0 kB, current process memory usage: 146172 kB
